@@ -1,0 +1,33 @@
+.rain-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.drop {
+  position: absolute;
+  width: 3px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  animation: fall 3s linear infinite;
+  filter: blur(0.5px);
+}
+
+/* Falling raindrops animation */
+@keyframes fall {
+  0% {
+    transform: translateY(-10vh);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+}

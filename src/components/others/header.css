@@ -1,0 +1,62 @@
+/* Full 3D Header Styling */
+.header-3d {
+  width: 100%;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+
+  /* 3D Glass Effect */
+  background: linear-gradient(135deg, rgba(0, 255, 135, 0.15), rgba(0, 150, 255, 0.1));
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  /* Lighting and Shadow */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), inset 0 0 20px rgba(255, 255, 255, 0.05);
+  border-radius: 0 0 20px 20px;
+}
+
+/* Logo 3D */
+.logo-3d {
+  font-size: 28px;
+  font-weight: bold;
+  color: #00ff99;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 10px 20px;
+  border-radius: 12px;
+  text-shadow: 0 0 10px #00ff99;
+  box-shadow: inset 0 0 10px rgba(0, 255, 100, 0.3);
+}
+
+/* Title 3D */
+.title-3d {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(0, 255, 150, 0.6);
+}
+
+/* Logout Button 3D */
+.logout-3d {
+  background: linear-gradient(135deg, #00ff99, #00ccff);
+  color: #111;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 255, 150, 0.5);
+  transition: all 0.3s ease;
+}
+
+.logout-3d:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 255, 150, 0.8), 0 0 10px rgba(0, 200, 255, 0.6);
+}
